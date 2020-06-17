@@ -1,0 +1,26 @@
+{
+  "name": "xl-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "gulp clean",
+    "dev": "gulp build_scss & gulp watch_scss & eleventy --serve --formats html,css,jpg,png",
+    "build": "gulp build_scss && eleventy --formats html,css,js,jpg,png"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "del": "^5.1.0",
+    "gulp-cli": "^2.3.0"
+  }
+}

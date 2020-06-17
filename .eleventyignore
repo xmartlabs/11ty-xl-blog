@@ -1,0 +1,10 @@
+README.md
+node_modules
+.eleventy.js
+gulpfile.js
+.nvmrc
+package.json
+package-lock.json
+.gitignore
+.DS_Store
+**/*.scss
