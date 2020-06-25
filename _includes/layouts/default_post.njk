@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+
+  {% include 'partials/_head_post.njk' %}
+
+  <body>
+    {% include 'partials/_header.njk' %}
+
+    {{ content | safe }}
+
+    {% include 'partials/_footer.njk' %}
+
+    {% include 'partials/_google_analytics.njk' %}
+    {% include 'partials/_twitter_analytics.njk' %}
+  </body>
+
+</html>

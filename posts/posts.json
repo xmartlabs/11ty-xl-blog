@@ -1,3 +1,5 @@
-{
-  "layout": "layouts/main_layout.njk"
-} 
+ {
+  "tags": [
+    "posts"
+  ]
+}

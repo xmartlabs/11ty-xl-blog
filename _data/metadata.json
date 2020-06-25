@@ -1,0 +1,18 @@
+{
+  "title": "Xmartlabs Blogs",
+  "url": "https://xmartlabs.com",
+  "description": "Articles by Xmartlabs, sharing the knowledge about full-stack mobile design and development in iOS, Android and Ruby.\n",
+  "email": "getintouch@xmartlabs.com",
+  "address": "Bulevar España 2529 - 11300",
+  "phone_eeuu": "16506141829",
+  "phone_uruguay": "(+598) 2408 7915",
+  "baseurl": "",
+  "url_team": "https://xmartlabs.com/#our_team",
+  "url_blog": "https://blog.xmartlabs.com",
+  "twitter_username": "xmartlabs",
+  "github_username": "xmartlabs",
+
+  "future": false,
+  "timezone": "America/Montevideo",
+  "permalink": "/:year/:month/:day/:title/"
+}

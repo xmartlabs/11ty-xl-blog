@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+$font-family: 'Graphik', sans-serif;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+// Our variables
+$base-font-size:   14px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #000000;
+$text-size:        18px;
+$line-height:      1.7;
+
+$background-color: #FFFFFF;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #777;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    950px;
+$md-content-width: 728px;
+
+$on-palm:          620px;
+$on-laptop:        800px;
+$md-width:         992px;
+
+// Colors
+$white: #FFFFFF;
+$black: #000000;
+$blue: #1678FF;
+$pink: #d91965;
+$light-grey: #a0a0a0;
+$lighter-grey: #ececec;
+$grey: #525252;
+$body: 'Graphik', sans-serif;
+$title-font-family: 'Libre Baskerville', sans-serif;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@mixin font_bold(){
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin font_light(){
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin font_light_italic(){
+  font-weight: 300;
+  font-style: italic;
+}
+
+@mixin font_normal(){
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-normal_italic(){
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font_black(){
+  font-weight: 900;
+  font-style: normal;
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "fonts",
+        "reset",
+        "bootstrap",
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
