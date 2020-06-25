@@ -2,14 +2,14 @@
 layout: layouts/default_post.njk
 banner_message: Interested in how we can help you?
 ---
-{% set category = categories[page.category] %}
-{% set author = authors[page.author_id] %}
+{% set category = categories[category] %}
+{% set author = authors[author_id] %}
 <article class="page-content">
   <div class="post-wrapper wrapper">
     <div class="post-header">
       <div class="wrapper">
         <a href="" class="blog-category"># {{ category.display_name }}</a>
-        <h1 class="post-title">{{ page.title }}</h1>
+        <h1 class="post-title">{{ title }}</h1>
         <div class="post-author-info">
           <div class="post-author-image">
             <a href="{{author.profile_url}}" target="_blank">
@@ -19,9 +19,9 @@ banner_message: Interested in how we can help you?
           <div class="post-author">
             <span>By <a class="post-author-name" href="{{author.profile_url}}" target="_blank">{{ author.display_name }}</a></span>
             <div class="post-time-info">
-              <time class="post-meta" datetime="{{ page.date }}">
+              <time class="post-meta" datetime="{{ date }}">
                 {# TODO: {{ page.date | date: "%b %-d, %Y" }} #}
-                {{ page.date }}
+                {{ date }}
               </time>
             </div>
           </div>

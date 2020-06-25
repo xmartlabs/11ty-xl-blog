@@ -1,19 +1,19 @@
-{% set category = categories[page.category] %}
-{% set author = authors[page.author_id] %}
+{% set category = categories[category] %}
+{% set author = authors[author_id] %}
 <article class="post-item">
   <a href="" class="blog-category"># {{ category.display_name}}</a>
-  <a href="{{ metadata.baseurl }}{{ post.url}}">
+  <a href="{{ metadata.baseurl }}{{ url}}">
     <div class="post-info">
       <div class="post-time-info">
-        <time class="post-meta" datetime="{{ post.date }}">
-          {{ post.date | date: "%b %-d, %Y" }}
+        <time class="post-meta" datetime="{{ date }}">
+          {{ date | date: "%b %-d, %Y" }}
         </time>
       </div>
       <h1 class="post-title">
-        {{ post.title }}
+        {{ title }}
       </h1>
       <p class="paragraph">
-        {{ post.content | truncatewords:40 | strip_html}}
+        {{ content | truncatewords:40 | strip_html}}
       </p>
     </div>
   </a>

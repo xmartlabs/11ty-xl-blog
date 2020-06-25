@@ -4,9 +4,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <title>{% if page.title %}{{ page.title }} | Xmartlabs{% else %}{{ site.title }}{% endif %}</title>
   {# TODO: <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"> #}
-  <meta name="description" content="{{ post.excerpt if post.excerpt else metadata.description }}">
+  <meta name="description" content="{{ excerpt if excerpt else metadata.description }}">
   {# TODO: Review using |d([]) (without it join fails if post.tags is null) #}
-  <meta name="keywords" content="{{ post.tags |d([]) | join(",") }}">
+  <meta name="keywords" content="{{ tags |d([]) | join(",") }}">
   {% if page.show %}
   {% else %}
     {% if page.dir != "/" %}
