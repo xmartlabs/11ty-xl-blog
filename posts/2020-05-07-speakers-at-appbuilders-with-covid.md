@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: "We will be speaking about how we run OSS at App Builders 2020 conference!"
 excerpt: "See how AppBuilders handle the quarantine and join us online!"
 date: 2020-05-07 10:00:00

@@ -9,17 +9,15 @@ layout: layouts/default.njk
       <h1 class="page-heading">
       </h1>
       <section>
-        <ul class="post-list">
-          {%- for post in collections.post -%}
-            <li>{{ post.data.title }}</li>
-          {%- endfor -%}
-          {# {% set displayPosts = site.posts | where: 'show', true %} #}
-          {# {% for post in displayPosts offset:3 %}
-            <li>
-              {% include 'partials/_post.njk', { post: post } %}
-            </li>
-          {% endfor %} #}
-        </ul>
+        <h1>Recent posts</h1>
+        {% set postslist = collections.posts | head(-3) %}
+        {% set postslistCounter = collections.posts | length %}
+        {% include "partials/_postslist.njk" %}
+
+        <h1>Old posts</h1>
+        {% set postslist = collections.posts | head(3) %}
+        {% set postslistCounter = collections.posts | length %}
+        {% include "partials/_postslist.njk" %}
       </section>
     </div>
     <iframe src="https://xmartlabs.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>

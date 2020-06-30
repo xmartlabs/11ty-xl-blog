@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: "What happened at AppBuilders?"
 excerpt: "My thoughts about the knowledge shared at the conference!"
 date: 2020-05-19 10:00:00

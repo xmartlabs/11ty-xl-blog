@@ -1,6 +1,39 @@
-{% set category = categories[category] %}
-{% set author = authors[author_id] %}
+{% set category = categories[post.data.category] %}
+{% set author = authors[post.data.author_id] %}
+
+<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+
 <article class="post-item">
+  <a href="" class="blog-category"># {{ category.display_name}}</a>
+  <a href="{{ post.url | url }}">
+    <div class="post-info">
+      <div class="post-time-info">
+        <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      </div>
+      <h1 class="post-title">
+        {{ post.data.title }}
+      </h1>
+      <p class="paragraph">
+        {{ post.data.excerpt }}
+      </p>
+    </div>
+  </a>
+  <span class="author">By <a href="{{author.profile_url}}" class="author" target="_blank" >{{ author.display_name }}</a></span>
+  {# TODO: Do we want a list of tags?? Remove if not #}
+  {# <div class="tags">
+    {% for tag in post.data.tags %}
+      {%- if collections.tagList.indexOf(tag) != -1 -%}
+      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+      <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+      {%- endif -%}
+    {% endfor %}
+  </div> #}
+</article>
+
+
+
+
+{# <article class="post-item">
   <a href="" class="blog-category"># {{ category.display_name}}</a>
   <a href="{{ metadata.baseurl }}{{ url}}">
     <div class="post-info">
@@ -18,4 +51,4 @@
     </div>
   </a>
   <span class="author">By <a href="{{author.profile_url}}" class="author" target="_blank" >{{ author.display_name }}</a></span>
-</article>
+</article> #}

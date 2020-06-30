@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: "5 Practical Ways to Speed Up your Deep Learning Model"
 excerpt: "Did you obtain good accuracy with your deep learning model only to find out that running it on production takes too long for your use case? Are you lost on how to optimize your model's inference speed? Then this post is for you."
 date: 2020-06-01 10:00:00

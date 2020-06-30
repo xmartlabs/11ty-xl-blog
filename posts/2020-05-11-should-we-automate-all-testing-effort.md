@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: "Should we automate all testing efforts?"
 excerpt: "Have you ever found yourself wanting full automation testing? Have you ever thought that everything should be automated? Then this post is for you."
 date: 2020-05-11 10:00:00

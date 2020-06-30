@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: "Powerful animations in React Native"
 excerpt: "Powerful animations with Reanimated. We will learn how to make powerful animations in React Native using this awesome library!"
 date: 2020-04-27 10:00:00

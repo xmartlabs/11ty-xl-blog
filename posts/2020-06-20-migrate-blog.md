@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: "Migrate blog"
 excerpt: "Migrating the blog."
 date: 2020-06-01 10:00:00

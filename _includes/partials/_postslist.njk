@@ -1,0 +1,8 @@
+<ol reversed class="post-list" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+  {% for post in postslist | reverse %}
+    {% if post.data.show %}
+      {% include 'partials/_post.njk' %}
+    </li>
+    {% endif %}
+  {% endfor %}
+</ol>
